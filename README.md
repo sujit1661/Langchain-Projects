@@ -1,152 +1,294 @@
-# LangChain Crash Course
+# 🚀 LangChain Mastery
 
-Welcome to the LangChain Crash Course repository! This repo contains all the code examples you'll need to follow along with the LangChain Master Class for Beginners video. By the end of this course, you'll know how to use LangChain to create your own AI agents, build RAG chatbots, and automate tasks with AI.
+Build modern AI applications with LangChain from scratch.
 
-## Course Outline
+This repository is a practical collection of hands-on examples covering the core concepts required to build AI-powered applications such as chatbots, Retrieval-Augmented Generation (RAG) systems, AI agents, and intelligent automation workflows.
 
-1. **Setup Environment**
-2. **Chat Models**
-3. **Prompt Templates**
-4. **Chains**
-5. **RAG (Retrieval-Augmented Generation)**
-6. **Agents & Tools**
+Instead of focusing on theory alone, every section contains runnable Python examples that demonstrate how each LangChain component works in real-world scenarios.
 
-## Getting Started
+---
 
-### Prerequisites
+## 👨‍💻 Author
 
-- Python 3.10 or 3.11
-- Poetry (Follow this [Poetry installation tutorial](https://python-poetry.org/docs/#installation) to install Poetry on your system)
+**Sujit Sadalage**
 
-### Installation
+AI Engineer • Python Developer • Generative AI Enthusiast
 
-1. Clone the repository:
+---
 
-   ```bash
-   <!-- TODO: UPDATE TO MY  -->
-   git clone https://github.com/bhancockio/langchain-crash-course
-   cd langchain-crash-course
-   ```
+# 📚 What You'll Learn
 
-2. Install dependencies using Poetry:
+This repository is organized as a progressive learning path.
 
-   ```bash
-   poetry install --no-root
-   ```
+### ✅ Environment Setup
 
-3. Set up your environment variables:
+- Project installation
+- Poetry package management
+- Environment variables
+- Running examples
 
-   - Rename the `.env.example` file to `.env` and update the variables inside with your own values. Example:
+---
 
-   ```bash
-   mv .env.example .env
-   ```
+### 💬 Chat Models
 
-4. Activate the Poetry shell to run the examples:
+Learn how to communicate with different LLM providers including:
 
-   ```bash
-   poetry shell
-   ```
+- OpenAI
+- Google Gemini
+- Anthropic Claude
+- Other supported providers
 
-5. Run the code examples:
+Topics include:
 
-   ```bash
-    python 1_chat_models/1_chat_model_basic.py
-   ```
+- Basic prompting
+- Multi-turn conversations
+- Interactive chat
+- Conversation history
+- Memory integration
 
-## Repository Structure
+---
 
-Here's a breakdown of the folders and what you'll find in each:
+### 📝 Prompt Engineering
 
-### 1. Chat Models
+Understand how prompt templates improve consistency and maintainability.
 
-- `1_chat_model_basic.py`
-- `2_chat_model_basic_conversation.py`
-- `3_chat_model_alternatives.py`
-- `4_chat_model_conversation_with_user.py`
-- `5_chat_model_save_message_history_firestore.py`
+Examples include:
 
-Learn how to interact with models like ChatGPT, Claude, and Gemini.
+- Basic PromptTemplate
+- ChatPromptTemplate
+- Dynamic variables
+- Prompt composition
+- Structured prompting
 
-### 2. Prompt Templates
+---
 
-- `1_prompt_template_basic.py`
-- `2_prompt_template_with_chat_model.py`
+### 🔗 LangChain Chains
 
-Understand the basics of prompt templates and how to use them effectively.
+Discover how LangChain connects multiple components into reusable AI pipelines.
 
-### 3. Chains
+You'll build:
 
-- `1_chains_basics.py`
-- `2_chains_under_the_hood.py`
-- `3_chains_extended.py`
-- `4_chains_parallel.py`
-- `5_chains_branching.py`
+- Sequential chains
+- Runnable chains
+- Parallel execution
+- Conditional branching
+- Advanced chain composition
 
-Learn how to create chains using Chat Models and Prompts to automate tasks.
+---
 
-### 4. RAG (Retrieval-Augmented Generation)
+### 📄 Retrieval-Augmented Generation (RAG)
 
-- `1a_rag_basics.py`
-- `1b_rag_basics.py`
-- `2a_rag_basics_metadata.py`
-- `2b_rag_basics_metadata.py`
-- `3_rag_text_splitting_deep_dive.py`
-- `4_rag_embedding_deep_dive.py`
-- `5_rag_retriever_deep_dive.py`
-- `6_rag_one_off_question.py`
-- `7_rag_conversational.py`
-- `8_rag_web_scrape_firecrawl.py`
-- `8_rag_web_scrape.py`
+Learn the complete RAG workflow from document ingestion to intelligent question answering.
 
-Explore the technologies like documents, embeddings, and vector stores that enable RAG queries.
+Covered topics:
 
-### 5. Agents & Tools
+- Loading documents
+- Text chunking
+- Metadata filtering
+- Embedding models
+- Vector databases
+- Retrievers
+- Similarity search
+- Conversational RAG
+- Web scraping
+- End-to-end RAG applications
 
-- `1_agent_and_tools_basics.py`
-- `agent_deep_dive/`
-  - `1_agent_react_chat.py`
-  - `2_react_docstore.py`
-- `tools_deep_dive/`
-  - `1_tool_constructor.py`
-  - `2_tool_decorator.py`
-  - `3_tool_base_tool.py`
+---
 
-Learn about agents, how they work, and how to build custom tools to enhance their capabilities.
+### 🤖 AI Agents & Tools
 
-## How to Use This Repository
+Go beyond simple chatbots by building autonomous AI agents capable of using external tools.
 
-1. **Watch the Video:** Start by watching the LangChain Master Class for Beginners video on YouTube at 2X speed for a high-level overview.
+Topics include:
 
-2. **Run the Code Examples:** Follow along with the code examples provided in this repository. Each section in the video corresponds to a folder in this repo.
+- ReAct agents
+- Tool calling
+- Custom tools
+- BaseTool implementation
+- Agent reasoning
+- Multi-step execution
 
-3. **Join the Community:** If you get stuck or want to connect with other AI developers, join the FREE Skool community [here](https://www.skool.com/ai-developer-accelerator/about).
+---
 
-## Comprehensive Documentation
+# 📂 Repository Structure
 
-Each script in this repository contains detailed comments explaining the purpose and functionality of the code. This will help you understand the flow and logic behind each example.
+```
+LangChain-Mastery/
+│
+├── 1_chat_models/
+│
+├── 2_prompt_templates/
+│
+├── 3_chains/
+│
+├── 4_rag/
+│
+└── 5_agents_tools/
+```
 
-## FAQ
+Each directory contains multiple runnable examples with detailed code comments for easier understanding.
 
-**Q: What is LangChain?**  
-A: LangChain is a framework designed to simplify the process of building applications that utilize language models.
+---
 
-**Q: How do I set up my environment?**  
-A: Follow the instructions in the "Getting Started" section above. Ensure you have Python 3.10 or 3.11 installed, install Poetry, clone the repository, install dependencies, rename the `.env.example` file to `.env`, and activate the Poetry shell.
+# ⚙️ Requirements
 
-**Q: I am getting an error when running the examples. What should I do?**  
-A: Ensure all dependencies are installed correctly and your environment variables are set up properly. If the issue persists, seek help in the Skool community or open an issue on GitHub.
+Before getting started, make sure you have:
 
-**Q: Can I contribute to this repository?**  
-A: Yes! Contributions are welcome. Please open an issue or submit a pull request with your changes.
+- Python 3.10+
+- Poetry
+- Git
+- API Keys (OpenAI, Gemini, etc.)
 
-**Q: Where can I find more information about LangChain?**  
-A: Check out the official LangChain documentation and join the Skool community for additional resources and support.
+---
 
-## Support
+# 🛠 Installation
 
-If you encounter any issues or have questions, feel free to open an issue on GitHub or ask for help in the Skool community.
+Clone the repository
 
-## License
+```bash
+git clone https://github.com/YOUR_USERNAME/langchain-mastery.git
+```
 
-This project is licensed under the MIT License.
+Move into the project
+
+```bash
+cd langchain-mastery
+```
+
+Install dependencies
+
+```bash
+poetry install --no-root
+```
+
+Create your environment file
+
+```bash
+cp .env.example .env
+```
+
+Activate Poetry
+
+```bash
+poetry shell
+```
+
+Run any example
+
+```bash
+python 1_chat_models/1_chat_model_basic.py
+```
+
+---
+
+# 📖 Learning Path
+
+For the best experience, complete the folders in the following order:
+
+1. Environment Setup
+2. Chat Models
+3. Prompt Templates
+4. Chains
+5. RAG
+6. Agents & Tools
+
+Every section builds on concepts introduced earlier.
+
+---
+
+# 💡 Highlights
+
+✔ Beginner Friendly
+
+✔ Well Commented Code
+
+✔ Production-Oriented Examples
+
+✔ Modern LangChain APIs
+
+✔ Hands-on Projects
+
+✔ Modular Code Structure
+
+✔ Easy to Extend
+
+---
+
+# 🎯 Who Is This For?
+
+This repository is ideal for:
+
+- Python Developers
+- AI Engineers
+- Students
+- Software Developers
+- Machine Learning Engineers
+- GenAI Enthusiasts
+- Anyone learning LangChain
+
+---
+
+# 🧠 Skills You'll Gain
+
+After completing this repository, you'll be able to:
+
+- Work with modern LLMs
+- Design reusable prompts
+- Build LangChain pipelines
+- Create RAG systems
+- Use vector databases
+- Develop AI agents
+- Integrate external tools
+- Build intelligent AI applications
+
+---
+
+# 📌 Example Topics
+
+Some examples included in this repository:
+
+- Basic Chat Model
+- Conversation History
+- Prompt Templates
+- Runnable Chains
+- Parallel Chains
+- Branching Logic
+- Document Loading
+- Text Splitting
+- Embeddings
+- Vector Stores
+- Retrievers
+- Metadata Search
+- Conversational RAG
+- Web-Based RAG
+- Tool Calling
+- ReAct Agents
+- Custom Tools
+
+---
+
+# 🤝 Contributions
+
+Contributions are always welcome.
+
+If you'd like to improve examples, fix bugs, or add new LangChain features, feel free to open an issue or submit a pull request.
+
+---
+
+# ⭐ Support
+
+If you find this repository useful, consider giving it a ⭐ on GitHub.
+
+Your support helps improve the project and motivates future updates.
+
+---
+
+# 📄 License
+
+This project is released under the MIT License.
+
+Feel free to use, modify, and build upon it for personal or commercial projects.
+
+---
+
+## Built with ❤️ by Sujit Sadalage
